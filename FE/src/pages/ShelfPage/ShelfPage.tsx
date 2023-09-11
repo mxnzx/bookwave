@@ -1,13 +1,3 @@
-import React from 'react';
-
-const ShelfPage = () => {
-
-    return (
-        <div>
-            <h1>Shelf Page</h1>
-            {/* 기타 페이지 컨텐츠 */}
-        </div>
-    );
-    
-}
-export default ShelfPage;
+version https://git-lfs.github.com/spec/v1
+oid sha256:86233d32db3ce90ee5cfccf2bda9426dbd0978056c633131902c9ac5bee87cfc
+size 849
