@@ -1,13 +1,3 @@
-import React from 'react';
-
-const SearchPage = () => {
-
-    return (
-        <div>
-            <h1>Search Page</h1>
-            {/* 기타 페이지 컨텐츠 */}
-        </div>
-    );
-    
-}
-export default SearchPage;
+version https://git-lfs.github.com/spec/v1
+oid sha256:a2ee377f04aa166f7a65c4c4cad77243a950fa3c83ac656ecfc901e14111bba9
+size 814

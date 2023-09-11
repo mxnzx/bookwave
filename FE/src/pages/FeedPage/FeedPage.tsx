@@ -1,13 +1,3 @@
-import React from 'react';
-import HeaderLogin from '../../components/Common/HeaderLogin/HeaderLogin';
-const FeedPage = () => {
-    return (
-        <div>
-            <HeaderLogin />
-            <h1>Feed Page</h1>
-            {/* 기타 페이지 컨텐츠 */}
-        </div>
-    );
-    
-}
-export default FeedPage;
+version https://git-lfs.github.com/spec/v1
+oid sha256:c6e4a35dda82c8617c0d2fb0f0b013c5e0fb2cd746dadf75ae1fdfae6617d722
+size 891

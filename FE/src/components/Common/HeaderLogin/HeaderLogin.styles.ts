@@ -1,28 +1,3 @@
-export const headerStyles = {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    padding: '1rem'
-};
-
-export const logoSectionStyles = {
-    display: 'flex',
-    alignItems: 'center'
-};
-
-export const logoStyles = {
-    width: '50px',
-    marginRight: '1rem',
-    borderRadius: '50%',
-};
-
-export const ImageStyles = {
-    width: '50px',
-    marginRight: '1rem',
-    borderRadius: '50%',
-};
-
-export const navigationStyles = {
-    display: 'flex',
-    gap: '1rem'
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:3aa87e591505c6215ea42d5ba1e7a0c33524e3e2ecc467ebd19cc6dcb1d088f3
+size 1129
