@@ -1,11 +1,3 @@
-import { CSSProperties } from "react";
-
-export const Header: CSSProperties = {
-  width: "100%",
-  position: "fixed",
-  top: 0,
-  left: 0,
-  zIndex: 1000,
-  display: "grid",
-  placeItems: "center" // 수직 및 수평 가운데 정렬
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:bfcbb72a0accf6c449c01da66971d462dec628b1f25a2361b56213ae88ab79e7
+size 1287
