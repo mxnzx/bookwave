@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b29595ff55cb94ab6f2977046d67ee33a2f5a4752a19fe015b3ba13edc410eb2
-size 2369
+import Record from "../../components/Guest/Record/Record";
+import Community from "../../components/Guest/Community/Community";
+import Recommend from "../../components/Guest/Recommend/Recommend";
+import Video from "../../components/Guest/Video/Video";
+
+const GuestPage = () => {
+
+  return (
+    <>
+    <Video/>
+    <Record/>
+    <Community/>
+    <Recommend/>
+    </>
+  );
+};
+export default GuestPage;
