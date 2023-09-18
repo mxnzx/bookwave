@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import BBTIResult from "../BBTIResult/BBTIResult";
 
 export const LayOut = styled.div`
   display: flex;
@@ -15,7 +14,7 @@ const Test = () => {
 
   return (
     <>
-      <BBTIResult/>
+      
     </>
   );
 };
