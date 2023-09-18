@@ -1,16 +1,12 @@
 import "styled-components";
 
-declare module "styled-components" {
+// and extend them!
+declare module 'styled-components' {
   export interface DefaultTheme {
-    red: string;
-    black: {
-      veryDark: string;
-      darker: string;
-      lighter: string;
-    };
-    white: {
-      darker: string;
-      lighter: string;
-    };
+  bgColor: string;
+  sideBarColor : string;
+  pointColor: string;
+  mainColor: string;
+  subColor: string;
   }
 }
