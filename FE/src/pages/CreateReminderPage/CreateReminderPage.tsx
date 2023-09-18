@@ -1,13 +1,3 @@
-import React from 'react';
-
-const CreateReminderPage = () => {
-
-    return (
-        <div>
-            <h1>CreateReminder Page</h1>
-            {/* 기타 페이지 컨텐츠 */}
-        </div>
-    );
-
-}
-export default CreateReminderPage;
+version https://git-lfs.github.com/spec/v1
+oid sha256:863d10975d3286ffe280735d9d4033aa6b4ed05fc31e76ef86f2ee4d6277e2dd
+size 1593
