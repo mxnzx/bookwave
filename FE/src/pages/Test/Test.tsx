@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7c85fbd7d0c7115bdd7e23d9cab4b34de20d7f69a12bac9ac423295feaa5282d
-size 2413
+import styled from "styled-components";
+import BBTIResult from "../../components/modals/BBTIResult/BBTIResult";
+
+export const LayOut = styled.div`
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(146, 132, 104, 0.07);
+`;
+  
+const Test = () => {
+
+
+  return (
+    <>
+      <BBTIResult/>
+    </>
+  );
+};
+export default Test;
