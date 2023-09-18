@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import BBTIResult from "../../components/modals/BBTIResult/BBTIResult";
+import BBTIResult from "../BBTIResult/BBTIResult";
 
 export const LayOut = styled.div`
   display: flex;
