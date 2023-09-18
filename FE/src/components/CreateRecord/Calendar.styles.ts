@@ -12,5 +12,6 @@ export const StyledDatePicker = styled(DatePicker)`
     border-radius: 10px;
     border: 1px solid rgba(0, 0, 0, 0);
     width: 20vw;
+    height: 3vh;
     text-align: center;
 `;
