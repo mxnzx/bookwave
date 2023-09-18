@@ -8,10 +8,12 @@ export const Footer = styled.div`
 `;
 
 export const CopyRightText = styled.div`
+ font-family: 'Pretendard-Regular';
   font-size: 1vw;
 `;
 
 export const CopyrightNotice = styled.div`
-  font-size: 1%;
+ font-family: 'Pretendard-Regular';
+  font-size: 1vw;
   margin-top: 10px;
 `;
