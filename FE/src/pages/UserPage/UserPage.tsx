@@ -10,7 +10,7 @@ export const LayOut = styled.div`
   align-items: center;
   background-color: ${(props) => props.theme.bgColor};
 `;
-  
+
 const UserPage = () => {
 
   return (
