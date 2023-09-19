@@ -8,5 +8,6 @@ declare module 'styled-components' {
   pointColor: string;
   mainColor: string;
   subColor: string;
+  beigeColor: string;
   }
 }
