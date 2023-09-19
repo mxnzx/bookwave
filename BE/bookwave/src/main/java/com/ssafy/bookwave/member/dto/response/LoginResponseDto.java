@@ -7,12 +7,10 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 @Builder
-public class MemberResponseDto {
+public class LoginResponseDto {
 
-    private Integer memberId;
-    private String email;
+    private Integer id;
+    private String message;
     private String nickname;
-    private String stMsg;
-    private String profilePath;
-
+    private Boolean firstLogin;
 }
