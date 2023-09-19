@@ -11,6 +11,5 @@ import org.springframework.web.multipart.MultipartFile;
 public class MemberInfoUpdateRequestDto {
 
     private String nickname;
-    private String stMsg;
     private MultipartFile file;
 }
