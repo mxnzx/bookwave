@@ -6,6 +6,7 @@ export const lightTheme: DefaultTheme = {
   pointColor: "#018ABE",
   mainColor: "#064469",
   subColor: "#D6E7EE",
+  beigeColor: "#F9F6ED"
 };
 
 export const darkTheme: DefaultTheme = {
@@ -14,4 +15,5 @@ export const darkTheme: DefaultTheme = {
   pointColor: "#018ABE",
   mainColor: "#064469",
   subColor: "#D6E7EE",
+  beigeColor: "#F9F6ED"
 };
