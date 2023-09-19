@@ -1,21 +1,3 @@
-import styled from "styled-components";
-
-export const LayOut = styled.div`
-  display: flex;
-  width: 100%;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(146, 132, 104, 0.07);
-`;
-  
-const Test = () => {
-
-
-  return (
-    <>
-      
-    </>
-  );
-};
-export default Test;
+version https://git-lfs.github.com/spec/v1
+oid sha256:47ddb9531efff906ef2b5acb467e78067d42a2cf97c64ed04c5d18e15cf8a9f2
+size 4844
