@@ -1,11 +1,3 @@
-package com.ssafy.bookwave.reminder.service;
-
-import com.ssafy.bookwave.reminder.dto.request.ReminderRegistRequest;
-import com.ssafy.bookwave.reminder.dto.response.ReminderDetailResponse;
-
-public interface ReminderService {
-
-    void regist(ReminderRegistRequest reminderRegistRequest) throws Exception;
-
-    ReminderDetailResponse getDetail(int memberId, int reminderId);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6b41aa72e5357b0cee199a43172aa099dc586b29ba6b4160f81de915daf1e07a
+size 641
