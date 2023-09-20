@@ -1,22 +1,3 @@
-import { motion } from "framer-motion";
-import styled from "styled-components";
-
-
-export const LayOut = styled.div`
-  display: flex;
-  width: 100%;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-  background-color: ${(props) => props.theme.bgColor};
-`;
-
-const UserPage = () => {
-
-  return (
-    <LayOut>
-      
-    </LayOut>
-  );
-};
-export default UserPage;
+version https://git-lfs.github.com/spec/v1
+oid sha256:b3dcd8844c348254db245c27c85a70fa2d9f5dcc23942c1fd3991fb5dff042fb
+size 2778
