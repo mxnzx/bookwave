@@ -3,9 +3,10 @@ package com.ssafy.bookwave.reminder.enums;
 import javax.persistence.criteria.CriteriaBuilder.In;
 
 public enum Color {
-    DEEPGREEN(0),
-    PINK(1),
-    GREEN(2);
+    PINK(0),
+    YELLOW(1),
+    PURPLE(2),
+    GREEN(3);
 
     private final Integer value;
 
