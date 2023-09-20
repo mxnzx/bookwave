@@ -1,11 +1,3 @@
-import styled from "styled-components";
-
-export const Container = styled.div`
-  /* border: 1px solid #000; */
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow-y: auto;
-`;
+version https://git-lfs.github.com/spec/v1
+oid sha256:8223fa2d0adafcb2f2dc81637095b0d653a302597aea87757c236dfeb5b279f3
+size 833
