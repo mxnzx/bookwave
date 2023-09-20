@@ -9,7 +9,7 @@ function HeaderComponent() {
                 SiverCastle
             </S.NickName>
             <S.TextRight>
-                팔로우 or OO형
+                팔로잉 or OO형
             </S.TextRight>
         </S.Header>
     );

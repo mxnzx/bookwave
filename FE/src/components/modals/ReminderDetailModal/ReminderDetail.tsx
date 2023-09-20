@@ -1,22 +1,3 @@
-import * as S from './ReminderDetail.styles';
-
-function ReminderDetail({ isOpen, onClose }) {
-  if (!isOpen) {
-    return null; // 모달이 닫혔을 때는 아무것도 렌더링하지 않는다.
-  }
-
-  return (
-    <S.Overlay>
-      <S.Container>
-        리마인더 모달
-        {/* 모달 내용 */}
-        {/* 모달 내용 추가 */}
-
-        {/* 모달 닫기 버튼 */}
-        <button onClick={onClose}>닫기</button>
-      </S.Container>
-    </S.Overlay>
-  );
-}
-
-export default ReminderDetail;
+version https://git-lfs.github.com/spec/v1
+oid sha256:658e207b80b672ffbdbb9460c0f2016e30a18ebc8499a85028f6428a5afba74b
+size 1991
