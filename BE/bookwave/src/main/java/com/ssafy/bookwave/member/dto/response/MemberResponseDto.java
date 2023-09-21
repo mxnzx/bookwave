@@ -11,8 +11,7 @@ public class MemberResponseDto {
 
     private Integer memberId;
     private String email;
-    private String nickname;
-    private String stMsg;
-    private String profilePath;
+    private String nickname;;
+    private String profileImgPath;
 
 }
