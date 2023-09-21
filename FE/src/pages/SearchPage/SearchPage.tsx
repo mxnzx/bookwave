@@ -1,17 +1,3 @@
-import * as S from './SearchPage.styles';
-
-function SearchPage() {
-
-  return (
-    <S.Container>
-      <S.Header>
-        <S.HeaderTitle>BOOK WAVE</S.HeaderTitle>
-        <S.HeaderSub>원하는 책을 검색해 보세요 !</S.HeaderSub>
-      </S.Header>
-      <S.Search>검색</S.Search>
-      <S.Body>바디</S.Body>
-    </S.Container>
-  );
-}
-
-export default SearchPage;
+version https://git-lfs.github.com/spec/v1
+oid sha256:394e27ddc6be28abceb55e760a27df7b76e0cda5f26b3695dfee0b678b0d7837
+size 664
