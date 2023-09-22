@@ -1,13 +1,3 @@
-import { privateApi, publicApi } from "./";
-
-
-export const postLogin = async (code: string) => {
-  try {
-    const response = await privateApi.post('/api/members/kakao/login', {
-      code: code,
-    });
-    return response.data;
-  } catch (error) {
-    throw new Error("api/auth 로그인 요청 실패")
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:30e48fdaeed27ad43acefd2de12003bfb67b26ca25ecd5518e27987dacb02c7d
+size 716
