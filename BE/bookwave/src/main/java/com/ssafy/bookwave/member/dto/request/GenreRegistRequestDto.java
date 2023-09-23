@@ -9,7 +9,7 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class GenreRegistRequest {
+public class GenreRegistRequestDto {
 
     private List<Integer> genreList;
 }
