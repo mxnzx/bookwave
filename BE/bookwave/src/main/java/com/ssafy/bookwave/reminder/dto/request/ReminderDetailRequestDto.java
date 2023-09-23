@@ -9,12 +9,8 @@ import lombok.NoArgsConstructor;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class ReminderRegistRequest {
+public class ReminderDetailRequestDto {
 
     private int memberId;
-    private int bookId;
-    private String content;
-    private int page;
-    private String color;
-
+    private int reminderId;
 }
