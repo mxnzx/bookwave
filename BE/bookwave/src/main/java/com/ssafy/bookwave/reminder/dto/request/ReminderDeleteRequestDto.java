@@ -9,8 +9,8 @@ import lombok.NoArgsConstructor;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class ReminderDetailRequest {
+public class ReminderDeleteRequestDto {
 
-    private int memberId;
     private int reminderId;
+
 }
