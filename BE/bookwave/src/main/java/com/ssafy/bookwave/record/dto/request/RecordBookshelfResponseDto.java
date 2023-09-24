@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:66b649db9b321eae08aae9361e1841c895671d75254c31756fbd0e488c765475
-size 660
+package com.ssafy.bookwave.record.dto.request;
+
+import com.ssafy.bookwave.book.domain.BookshelfBook;
+import com.ssafy.bookwave.book.dto.response.BookBookshelfResponseDto;
+import com.ssafy.bookwave.book.dto.response.BookshelfBookResponseDto;
+import lombok.*;
+
+import java.util.List;
+
+@Data
+@AllArgsConstructor
+@Builder
+public class RecordBookshelfResponseDto {
+
+    private List<BookBookshelfResponseDto> readingBookList;
+    private List<BookBookshelfResponseDto> doneBookList;
+
+
+}
