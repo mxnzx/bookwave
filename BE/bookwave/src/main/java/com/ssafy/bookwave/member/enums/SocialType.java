@@ -1,8 +1,8 @@
 package com.ssafy.bookwave.member.enums;
 
 public enum SocialType {
-    KAKAO("kakao"),
-    NAVER("naver");
+    KAKAO("KAKAO"),
+    NAVER("NAVER");
 
     private final String value;
 
