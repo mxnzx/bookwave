@@ -8,12 +8,13 @@ export const Container = styled.div`
 
 export const StyledDatePicker = styled(DatePicker)`
   font-family: "Pretendard-Regular";
-  font-size: 1vw;
+  font-size: 15px;
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0);
-  width: 20vw;
-  height: 3vh;
+  width: 250px;
+  height: 30px;
   text-align: center;
   outline: none;
   cursor: pointer;
+  
 `;
