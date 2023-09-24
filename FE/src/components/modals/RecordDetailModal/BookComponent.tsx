@@ -1,17 +1,3 @@
-import * as S from "./BookComponent.styles";
-
-function BookComponent() {
-    return (
-        <S.Container>
-            <S.BookImage>
-                <img src="https://image.aladin.co.kr/product/31867/71/cover500/k132833528_2.jpg" alt="Book Cover" />
-            </S.BookImage>
-            <S.BookInfo>
-                <S.BookTitle>도서 제목</S.BookTitle>
-                <S.Author>저자명</S.Author>
-            </S.BookInfo>
-        </S.Container>
-    );
-}
-
-export default BookComponent;
+version https://git-lfs.github.com/spec/v1
+oid sha256:94c72d8cc1f9e73be0f8ca112f52f9abcb880558d58245a4a855e02c56171287
+size 521
