@@ -2,10 +2,12 @@ package com.ssafy.bookwave.record.dto.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.web.multipart.MultipartFile;
 
 @Data
 @AllArgsConstructor
+@NoArgsConstructor
 public class RecordRegistRequestDto {
 
     private int memberId;
@@ -17,4 +19,5 @@ public class RecordRegistRequestDto {
     private double star;
 
     private MultipartFile file;
+
 }
