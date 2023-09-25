@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a6d2c72ae538f4d425b31201247161cba0d92e37be4962bb0493cbd14f651024
-size 990
+import record from "../../../assets/images/feed.jpg";
+import * as S from "./ProfileRecord.styles";
+
+const ProfileRecord = () => {
+
+  const feeds = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+  return (
+        <S.FeedGrid>
+          {feeds.map(feed => 
+          <S.FeedBox key={feed} >
+            <S.FeedImg src={record}/>
+          </S.FeedBox>)}
+        </S.FeedGrid>
+  );
+};
+export default ProfileRecord;
