@@ -1,17 +1,3 @@
-package com.ssafy.bookwave.record.enums;
-
-public enum RecordResponseMessage {
-
-    RECORD_BOOKSHELF_SUCCESS("레코드 글 작성 시 나의 책장 정보 불러오기 성공"),
-    RECORD_WRITERECORDBOOK_SUCCESS("레코드 글 등록 시 책 정보 불러오기 성공");
-    private final String message;
-
-
-    RecordResponseMessage(String message) {
-        this.message = message;
-    }
-
-    public String getMessage(){
-        return message;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:58e0562b31b51795e8ccd5e004a9100ac87c7d73fbd0ec53b1f5d423af0be776
+size 522
