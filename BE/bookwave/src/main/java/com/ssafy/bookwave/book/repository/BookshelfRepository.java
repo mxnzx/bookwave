@@ -8,4 +8,6 @@ import java.util.List;
 public interface BookshelfRepository extends JpaRepository<BookshelfBook, Integer> {
 
     List<BookshelfBook> findByMemberId(int memberId);
+
+    BookshelfBook findByBookIdAndMemberId(int bookId, int memberId);
 }
