@@ -8,4 +8,6 @@ import java.util.List;
 
 public interface MemberGenreRepository extends JpaRepository<MemberGenre, Integer> {
     List<MemberGenre> findByMember(Member member);
+
+    List<MemberGenre> findByMemberId(Integer id);
 }
