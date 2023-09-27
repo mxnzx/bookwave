@@ -1,13 +1,3 @@
-package com.ssafy.bookwave.record.repository;
-
-import com.ssafy.bookwave.member.domain.Member;
-import com.ssafy.bookwave.record.domain.RecordLike;
-import com.ssafy.bookwave.record.domain.Record;
-import org.springframework.data.jpa.repository.JpaRepository;
-
-import java.util.Optional;
-
-public interface RecordLikeRepository extends JpaRepository<RecordLike, Integer> {
-    Optional<RecordLike> findByRecordAndMember(Record record, Member member);
-    long countByRecord(Record record);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:84a67243f1d0d054f8ea00891410e4cafc9e04d78b428f0346efd2418edc8c93
+size 567
