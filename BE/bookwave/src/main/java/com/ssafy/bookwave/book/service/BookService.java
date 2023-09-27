@@ -7,4 +7,5 @@ public interface BookService {
 
     BookDetailResponseDto getBookDetail(int bookId, Member findMember);
 
+    void changeBookState(Integer memberId, int bookId, int bookState);
 }
