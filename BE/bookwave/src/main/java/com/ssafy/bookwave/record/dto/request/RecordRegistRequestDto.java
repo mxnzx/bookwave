@@ -18,6 +18,6 @@ public class RecordRegistRequestDto {
     private String endDate;
     private double star;
 
-    private MultipartFile file;
+    //private MultipartFile file;
 
 }
