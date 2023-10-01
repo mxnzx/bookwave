@@ -12,10 +12,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class DiaryModifyRequestDto {
 
-    private int memberId;
-    private int DiaryId;
-    private int bookId;
+    private int diaryId;
     private String content;
-    private int page;
     private String color;
+
 }
