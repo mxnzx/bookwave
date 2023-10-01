@@ -1,27 +1,3 @@
-package com.ssafy.bookwave.book.domain;
-
-import lombok.*;
-
-import javax.persistence.Entity;
-import javax.persistence.Id;
-
-@Entity
-@Getter
-@Builder
-@NoArgsConstructor(access = AccessLevel.PROTECTED)
-@AllArgsConstructor
-public class BookEmotion {
-
-    @Id
-    private Integer bookId;
-    private double happy;
-    private double confidence;
-    private double peace;
-    private double sad;
-    private double angry;
-    private double scare;
-    private double tired;
-    private double regret;
-
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0bfad00abea7f6c9c573d0d4f93b420c2f12f6d7e2144c3a51031e1fb2954267
+size 566

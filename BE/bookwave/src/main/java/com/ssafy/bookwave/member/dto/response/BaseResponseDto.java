@@ -12,4 +12,6 @@ public class BaseResponseDto {
     private boolean success;
     private String message;
     private Object data;
+
+
 }
