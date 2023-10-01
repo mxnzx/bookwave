@@ -1,17 +1,3 @@
-package com.ssafy.bookwave.bbti.dto.response;
-
-import lombok.Builder;
-
-public class BbtiResponseDto {
-
-    private int id;
-    private String name;
-    private String content;
-
-    @Builder
-    public BbtiResponseDto(int id, String name, String content) {
-        this.id = id;
-        this.name = name;
-        this.content = content;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:098f66c39e6b49714ca3c596673d6483a42549655bea00e8b6b4772dd1b9db9a
+size 610
