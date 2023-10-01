@@ -9,5 +9,6 @@ import java.util.List;
 public interface DiaryRepository extends JpaRepository<Diary, Integer> {
 
     List<Diary> findByMember(Member member);
+    List<Diary> findByMemberOrderByLastModifiedDateDesc(Member member);
 
 }
