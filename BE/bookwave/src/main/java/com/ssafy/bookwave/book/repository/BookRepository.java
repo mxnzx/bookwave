@@ -8,5 +8,5 @@ import java.util.List;
 public interface BookRepository extends JpaRepository<Book, Integer> {
     List<Book> findAllByGenreDetailDictId(Integer detailDictId);
     List<Book> findByEmotion(String emotion);
-
+    List<Book> findByAuthorContainsOrTitleContains(String title, String author);
 }
