@@ -1,20 +1,3 @@
-/* eslint-disable no-useless-catch */
-import { privateApi } from "../index";
-
-export const featchBBTI = async (userSeq: number) => {
-  try {
-    const authToken = localStorage.getItem("accessToken");
-
-    const response = await privateApi.get(
-      `api/bookshelf/list?memberId=${userSeq}`,
-      {
-        headers: {
-          Authorization: `Bearer ${authToken}`,
-        },
-      }
-    );
-    return response.data.data;
-  } catch (error) {
-    throw error;
-  }
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:3b3de47f3abec0226de39e27acb33c0b8f60983859cacb4267a95ebdb0718921
+size 939
