@@ -1,7 +1,7 @@
 from sqlalchemy import *
 from sqlalchemy.orm import sessionmaker
 
-DB_URL = 'mysql+pymysql://mimi:mimi@localhost:3306/bookwave'
+DB_URL = 'mysql+pymysql://bookwaveteam203:bwteam203@j9b203.p.ssafy.io:5012/bookwave'
 
 
 class engineconn:
