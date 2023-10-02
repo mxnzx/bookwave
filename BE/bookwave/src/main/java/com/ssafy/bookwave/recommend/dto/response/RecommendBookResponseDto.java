@@ -1,12 +1,11 @@
 package com.ssafy.bookwave.recommend.dto.response;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
+import lombok.*;
 
 @Data
 @AllArgsConstructor
 @Builder
+@NoArgsConstructor
 public class RecommendBookResponseDto {
 
     private int bookId;
