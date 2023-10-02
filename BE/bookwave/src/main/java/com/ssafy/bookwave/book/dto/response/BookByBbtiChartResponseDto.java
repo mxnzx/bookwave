@@ -8,6 +8,7 @@ import lombok.Data;
 @Builder
 public class BookByBbtiChartResponseDto {
 
+    private int bbtiTypeId;
     private String bbtiType;
     private int bbtiCnt;
 }
