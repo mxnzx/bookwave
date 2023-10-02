@@ -1,12 +1,3 @@
-package com.ssafy.bookwave.book.repository;
-
-import com.ssafy.bookwave.book.domain.Book;
-import org.springframework.data.jpa.repository.JpaRepository;
-
-import java.util.List;
-
-public interface BookRepository extends JpaRepository<Book, Integer> {
-    List<Book> findAllByGenreDetailDictId(Integer detailDictId);
-    List<Book> findByEmotion(String emotion);
-    List<Book> findByAuthorContainsOrTitleContains(String title, String author);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0d2d33dc552374e65bfac8e83e79184deb0d1562c020dd637b021a593d2c72b8
+size 1280
