@@ -1,20 +1,3 @@
-from fastapi import FastAPI
-from routers.emotion_predictor import router as emotion_router
-from pydantic import BaseModel
-from database import engineconn
-# from models import Book
-from models import GenreDict
-from typing import List
-
-app = FastAPI()
-engine = engineconn()
-session = engine.sessionmaker()
-app.include_router(emotion_router)
-
-
-@app.get("/rec/bookwave")
-async def DB테스트():
-    example = session.query(GenreDict).all()
-    
-    return example
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:4590dab300a8ffc128061425c2213b39e8ad2f22ec8cfb8aea6f4081b27e188c
+size 727
