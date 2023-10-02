@@ -1,19 +1,3 @@
-package com.ssafy.bookwave.book.dto.response;
-
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
-import java.util.List;
-
-@Data
-@AllArgsConstructor
-@Builder
-public class BookshelfListResponseDto {
-
-    private List<BookBookshelfResponseDto> wishBookList;
-    private List<BookBookshelfResponseDto> readingBookList;
-    private List<BookBookshelfResponseDto> doneBookList;
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:247a39d4f1da55f1177fee6ec0b9930051fa972d55627cfd887fc4f3352a1739
+size 679
