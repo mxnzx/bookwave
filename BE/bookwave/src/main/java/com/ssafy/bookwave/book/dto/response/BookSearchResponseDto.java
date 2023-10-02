@@ -8,6 +8,6 @@ import java.util.List;
 @Data
 @Builder
 public class BookSearchResponseDto {
-
+    int bookListCnt;
     List<BookListBySearchResponseDto> bookList;
 }
