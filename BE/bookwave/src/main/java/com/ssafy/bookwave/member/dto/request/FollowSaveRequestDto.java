@@ -4,5 +4,5 @@ import lombok.Getter;
 
 @Getter
 public class FollowSaveRequestDto {
-    private int followingId;
+    private int followerId;
 }
