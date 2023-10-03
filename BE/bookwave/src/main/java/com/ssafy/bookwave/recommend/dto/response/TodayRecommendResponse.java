@@ -14,4 +14,5 @@ public class TodayRecommendResponse {
     private Integer bookId;
     private String bookTitle;
     private String bookAuthor;
+    private String bookImgUrl;
 }
