@@ -1,4 +1,3 @@
-// temp
 import DatePicker from "react-datepicker";
 import styled from "styled-components";
 
@@ -7,7 +6,6 @@ export const Container = styled.div`
 `;
 
 export const StyledDatePicker = styled(DatePicker)`
-  font-family: "Pretendard-Regular";
   font-size: 15px;
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0);
