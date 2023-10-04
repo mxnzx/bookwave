@@ -10,3 +10,8 @@ export const selectedGenreIndexState = atom<number | null>({
   key: 'selectedGenreIndexState',
   default: null,
 });
+
+export const searchAttemptedState = atom({
+  key: 'searchAttemptedState',
+  default: false,
+});
