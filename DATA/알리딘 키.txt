@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e9035eb0fd85be3f4f515425a3417dc1163905264abaaa27e6056a3bc8767ec7
-size 2258
+[나]
+ttbsseq0071806002
+
+[제혁]
+cjh970324
+mimi1006
+ttbcjh9703241248001
+
+[소현]
+ass430
+aa122306
+ttbaa4302101001
+
+[민지]
+i0692631
+qwas12!!
+ttbi06926312220001
+
