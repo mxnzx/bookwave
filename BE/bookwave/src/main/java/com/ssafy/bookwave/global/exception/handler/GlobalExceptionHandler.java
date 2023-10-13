@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:10542ee511927a7be1639be6b79e7306bde54ceac78e7af49d4f402a2ee822eb
-size 578
+package com.ssafy.bookwave.global.exception.handler;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.server.ResponseStatusException;
+
+@ControllerAdvice
+public class GlobalExceptionHandler {
+
+    @ExceptionHandler(ResponseStatusException.class)
+    public ResponseEntity<?> handleResponseStatusException(ResponseStatusException ex) {
+        return ResponseEntity.status(ex.getStatus()).body(ex.getReason());
+    }
+}

@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fb42f92a981bb842cae7b715cf90787dde2ef572d9e26e5adf86fe894d6f20a2
-size 773
+package com.ssafy.bookwave.book.dto.response;
+
+import com.ssafy.bookwave.book.domain.Book;
+import com.ssafy.bookwave.book.domain.BookshelfBook;
+import com.ssafy.bookwave.book.enums.State;
+import com.ssafy.bookwave.member.domain.Member;
+import com.ssafy.bookwave.member.dto.response.MemberInfoResponseDto;
+import lombok.*;
+
+@Data
+@NoArgsConstructor
+@Getter
+public class BookshelfBookResponseDto {
+
+    private int id;
+    private MemberInfoResponseDto memberId;
+    private BookResponseDto bookId;
+    private State state;
+
+    @Builder
+    public BookshelfBookResponseDto(int id, MemberInfoResponseDto memberId, BookResponseDto bookId, State state) {
+        this.id = id;
+        this.memberId = memberId;
+        this.bookId = bookId;
+        this.state = state;
+    }
+}

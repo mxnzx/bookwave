@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e38149f173abcb878011dcbff18482083e69255499552e56e97ad307d13374a6
-size 579
+package com.ssafy.bookwave.global.util.property;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component
+public class ApplicationProperties {
+
+    public static String HOST_IMAGE_URL;
+    public static String PROFILE_PATH;
+
+
+
+
+    public ApplicationProperties(@Value("${host.profile.url}") String hostImgUrl,
+                                 @Value("${file.member-upload-dir}") String profilePath
+                                 ) {
+        HOST_IMAGE_URL = hostImgUrl;
+        PROFILE_PATH = profilePath;
+    }
+}

@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6f53268b4c23f306721519cc607637e0b4122b8cccbec2053f475a629fe1d4b3
-size 548
+package com.ssafy.bookwave.book.repository;
+
+import com.ssafy.bookwave.book.domain.GenreDetailDict;
+import com.ssafy.bookwave.book.domain.GenreDetailDict.GenreDictIdInfoMapping;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.List;
+import java.util.Optional;
+
+public interface GenreDetailDictRepository extends JpaRepository<GenreDetailDict, Integer> {
+
+    //GenreDict 엔티티의 id 와 일치하는 GenreDetailDict를 반환하는 메서드
+    List<GenreDictIdInfoMapping> findByGenreDictId(int genreId);
+
+}
+
+

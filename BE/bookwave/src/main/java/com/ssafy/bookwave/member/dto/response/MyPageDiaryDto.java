@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:35d26609ff4e2b744ca8bf58430d41b943fd3499516511bab9e7c1a576d7c2f1
-size 647
+package com.ssafy.bookwave.member.dto.response;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.springframework.cglib.core.Local;
+
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class MyPageDiaryDto {
+    private Integer diaryId;
+    private String diaryContent;
+    private String diaryColor;
+    private String diaryDate;
+
+    public void setDiaryDate(LocalDateTime diaryDate){
+        this.diaryDate = diaryDate.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
+    }
+}

@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2c9bfde2153981ad06924c86307faf8cf93cd4967936ff0da542c865ccd18d29
-size 692
+package com.ssafy.bookwave.book.dto.response;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+
+@Data
+public class BookBookshelfResponseDto {
+
+    private int bookId;
+    private String isbn;
+    private String bookImageUrl;
+    private String bookTitle;
+    private String bookAuthor;
+    private int state;
+
+    @Builder
+
+    public BookBookshelfResponseDto(int bookId,String isbn, String bookImageUrl, String bookTitle, String bookAuthor, int state) {
+        this.bookId = bookId;
+        this.isbn = isbn;
+        this.bookImageUrl = bookImageUrl;
+        this.bookTitle = bookTitle;
+        this.bookAuthor = bookAuthor;
+        this.state = state;
+    }
+}

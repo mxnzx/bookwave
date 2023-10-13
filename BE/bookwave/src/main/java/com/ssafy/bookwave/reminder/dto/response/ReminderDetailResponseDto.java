@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c980763f85b91f304d31cf1240a8ac7f5022cad8b2ac2dd32cdcbb550f574523
-size 571
+package com.ssafy.bookwave.reminder.dto.response;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+
+@Data
+@AllArgsConstructor
+@Builder
+public class ReminderDetailResponseDto {
+
+    private int reminderWriterMemberId;
+    private String reminderWriterImageUrl;
+    private String nickname;
+    private int reminderId;
+    private String bookTitle;
+    private String author;
+    private String content;
+    private int page;
+    @JsonProperty("isFollow")
+    private boolean isFollow;
+
+
+}

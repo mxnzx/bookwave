@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4fc51e466b3b71bf4f2860c37be2d6067a9024a12c4d4cc9ebaa47a210fa9462
-size 634
+package com.ssafy.bookwave.bbti.domain;
+
+import java.util.List;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+
+import com.ssafy.bookwave.bbti.enums.Code;
+import lombok.*;
+
+@Entity
+@Getter
+@Builder
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
+@AllArgsConstructor
+@ToString
+public class BbtiQuestion {
+
+    @Id @GeneratedValue
+    private Integer id;
+    private String content;
+
+    @OneToMany(mappedBy = "bbtiQuestion", fetch = FetchType.LAZY)
+
+    private List<BbtiTypeElement> bbtiTypeElements;
+}

@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9b3387dfbcbabed9e36f9563eeaffcd948e6d99c8b191c60284fb1de2a50a99b
-size 737
+package com.ssafy.bookwave.member.service;
+
+import com.ssafy.bookwave.member.dto.request.FollowSaveRequestDto;
+import com.ssafy.bookwave.member.dto.response.BaseResponseDto;
+import com.ssafy.bookwave.member.dto.response.FollowerPageResponseDto;
+import com.ssafy.bookwave.member.dto.response.FollowingPageResponseDto;
+
+public interface FollowService {
+    FollowerPageResponseDto getFollowers(int memberId, int i, int size);
+
+    FollowingPageResponseDto getFollowings(int memberId, int i, int size);
+
+    BaseResponseDto enrollFollow(int followerId, FollowSaveRequestDto followSaveRequestDto);
+
+    BaseResponseDto deleteFollow(int followingId, int followerId);
+
+    BaseResponseDto checkFollowStatus(int followingId, int followerId);
+}

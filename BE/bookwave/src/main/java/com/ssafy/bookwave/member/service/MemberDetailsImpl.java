@@ -1,3 +1,61 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:356730ce0d7ab6bbf1f3e8e5c85cef764c6ac0d16a2975a822d5f86c42e7d95d
-size 1248
+package com.ssafy.bookwave.member.service;
+
+import com.ssafy.bookwave.member.domain.Member;
+import lombok.RequiredArgsConstructor;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
+
+import java.util.ArrayList;
+import java.util.Collection;
+
+@RequiredArgsConstructor
+public class MemberDetailsImpl implements UserDetails {
+    private final Member member;
+
+    public Member getUser() {
+        return member;
+    }
+
+    @Override
+    public String getPassword() {
+        return null;
+    }
+
+    @Override
+    public String getUsername() {
+        return member.getNickname();
+    }
+
+    @Override
+    public boolean isAccountNonExpired() {
+        return true;
+    }
+
+    @Override
+    public boolean isAccountNonLocked() {
+        return true;
+    }
+
+    @Override
+    public boolean isCredentialsNonExpired() {
+        return true;
+    }
+
+    @Override
+    public boolean isEnabled() {
+        return true;
+    }
+
+    @Override
+    public Collection<? extends GrantedAuthority> getAuthorities() {
+
+        Collection<GrantedAuthority> collectors = new ArrayList<>();
+
+
+        collectors.add(()->{return "ROLE_"+member.getRole();});
+
+
+        return collectors;
+    }
+
+}

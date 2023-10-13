@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8c3d735c865db94e7b4fb7f1b8be726e3d6519466dc1944f774a522579f8041b
-size 522
+package com.ssafy.bookwave.member.service;
+
+import com.ssafy.bookwave.member.domain.Member;
+import com.ssafy.bookwave.member.dto.response.FavoriteGenreResponseDto;
+import com.ssafy.bookwave.member.dto.response.GenreQuestionResponseDto;
+
+import java.util.List;
+
+public interface GenreService {
+    GenreQuestionResponseDto getGenreList(int memberId);
+
+    void registGenre(int memberId, List<Integer> genreList);
+
+    //회원 최애 장르 3개 조회
+    FavoriteGenreResponseDto getFavoriteGenreList(Member member);
+
+
+}

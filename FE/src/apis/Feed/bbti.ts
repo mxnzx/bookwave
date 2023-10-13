@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c3a96c04b7f7313d8297f409ea98cf7e6016a5f6aa85614d2ed5edb4de454977
-size 620
+/* eslint-disable no-useless-catch */
+import { privateApi } from "../index";
+
+export const featchBBTI = async (userSeq: number) => {
+  try {
+    const response = await privateApi.get(
+      `api/bookshelf/list?memberId=${userSeq}`
+    );
+    return response.data.data;
+  } catch (error) {
+    throw error;
+  }
+};
+
+// 유저 정보 전체 불러오기
+export const featchFeedBBTI = async () => {
+  try {
+    const response = await privateApi.get(`api/record/memberlist`);
+    return response.data;
+  } catch (error) {
+    console.log("피드에서 bbti 정보 불러오는데 axios 어?", error);
+    throw error;
+  }
+};

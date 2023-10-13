@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:62b4229a0ec6a4098f9fb71153cac2343d509315c3f1a3e9137848d242ea5480
-size 694
+import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import swal from 'sweetalert';
+
+const useCheckAuthentication = () => {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const accessToken = localStorage.getItem("accessToken");
+
+    if (!accessToken) {
+      navigate('/login');
+      swal({
+        title: "알림",
+        text: "로그인이 필요한 페이지입니다.",
+        icon: "warning",
+        buttons: {
+          confirm: {
+            text: "확인",
+            value: true,
+            visible: true,
+            closeModal: true,
+          },
+        },
+      });
+    }
+  }, [navigate]);
+}
+
+export default useCheckAuthentication;

@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b9b927fd6697a0356543f12f067c261186b98bac27e296019e7d537a88800459
-size 546
+package com.ssafy.bookwave.book.repository;
+
+import com.ssafy.bookwave.book.domain.BookshelfBook;
+import com.ssafy.bookwave.book.enums.State;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.Collection;
+import java.util.List;
+
+public interface BookshelfRepository extends JpaRepository<BookshelfBook, Integer> {
+
+    List<BookshelfBook> findByMemberId(int memberId);
+
+    BookshelfBook findByBookIdAndMemberId(int bookId, int memberId);
+
+    int countByBookIdAndStateIn(Integer book_id, Collection<State> state);
+}

@@ -1,3 +1,64 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:97d2a25ca113f2637c0d9e1cca9de55338274a444dc4a9a2619a0ce66deb9f1d
-size 1757
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital@1&family=Caveat:wght@400;500&family=Cormorant+Garamond&family=Hi+Melody&family=Sunflower:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+
+/* 프리텐다드 - 메인 폰트 */
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* 애플 폰트 - Bold */
+@font-face {
+    font-family: "Apple-B";        
+    src: url("../font/SF-Pro-Text-Bold.otf");
+}
+
+/* 애플 폰트 - Heavy */
+@font-face {
+    font-family: "Apple-H";        
+    src: url("../font/SF-Pro-Text-Heavy.otf");
+}
+
+/* 영어 포인트 폰트 - 'Abril Fatface' */
+
+
+/* 오뮤 다예쁨체 */
+@font-face {
+    font-family: 'omyu_pretty';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Blue-road";        
+    src: url("../font/Yeongdeok Blueroad.ttf");
+    }
+
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Sandol-B";        
+    src: url("../font/AppleSDGothicNeoB.ttf");
+}
+
+/* SUITE 폰트 - Regular */
+@font-face {
+    font-family: "SUITE-Regular";        
+    src: url("../font/SUITE-Regular.ttf");
+}
+
+/* SUITE 폰트 - Bold */
+@font-face {
+    font-family: "SUITE-Bold";        
+    src: url("../font/SUITE-Bold.ttf");
+}
+

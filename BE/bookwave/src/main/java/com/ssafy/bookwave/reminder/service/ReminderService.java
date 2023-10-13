@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fe7ff1231c8ee76d2b0cf415788ef2b5506291947f15ee3448b15a60f209ea85
-size 665
+package com.ssafy.bookwave.reminder.service;
+
+import com.ssafy.bookwave.reminder.dto.request.ReminderDeleteRequestDto;
+import com.ssafy.bookwave.reminder.dto.request.ReminderModifyRequestDto;
+import com.ssafy.bookwave.reminder.dto.request.ReminderRegistRequestDto;
+import com.ssafy.bookwave.reminder.dto.response.ReminderDetailResponseDto;
+
+public interface ReminderService {
+
+    void regist(ReminderRegistRequestDto reminderRegistRequest) throws Exception;
+
+    ReminderDetailResponseDto getDetail(int memberId, int reminderId);
+
+    void modify(ReminderModifyRequestDto reminderModifyRequest);
+
+    void delete(ReminderDeleteRequestDto reminderDeleteRequest);
+}

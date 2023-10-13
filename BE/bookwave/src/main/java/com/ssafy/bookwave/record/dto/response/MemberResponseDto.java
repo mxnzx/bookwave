@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9e04153190a1269a7421ba51c7da0d06e46921226d13b996af124132cb98de65
-size 540
+package com.ssafy.bookwave.record.dto.response;
+
+import lombok.Builder;
+import lombok.Getter;
+import lombok.ToString;
+
+@Getter
+@ToString
+public class MemberResponseDto {
+
+    private int memberId;
+    private int bbtiTypeId;
+    private String nickname;
+    private String imageUrl;
+
+    @Builder
+    public MemberResponseDto(int memberId, int bbtiTypeId, String nickname, String imageUrl) {
+        this.memberId = memberId;
+        this.bbtiTypeId = bbtiTypeId;
+        this.nickname = nickname;
+        this.imageUrl = imageUrl;
+    }
+}

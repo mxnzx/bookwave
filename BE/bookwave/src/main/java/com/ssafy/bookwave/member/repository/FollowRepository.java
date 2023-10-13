@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a8f86aef3f43fcad82bcc6db8ab8ed93612847f4a25ca06389a4cebbaaf81a46
-size 822
+package com.ssafy.bookwave.member.repository;
+
+import com.ssafy.bookwave.member.domain.Follow;
+import com.ssafy.bookwave.member.domain.Member;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.List;
+import java.util.Optional;
+
+public interface FollowRepository extends JpaRepository<Follow, Integer> {
+    Follow findByFollowerId(Integer id);
+
+    List<Follow> findByFollowingId(Integer id);
+
+    // 내가 팔로우 하는 사람
+    Page<Follow> findAllByFollowingId(Integer id, Pageable pageable);
+
+    // 나를 팔로우 하는 사람
+    Page<Follow> findAllByFollowerId(Integer id, Pageable pageable);
+
+    Optional<Follow> findByFollowerAndFollowing(Member follower, Member following);
+
+
+}

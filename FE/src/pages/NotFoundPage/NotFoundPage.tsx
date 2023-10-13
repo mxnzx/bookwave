@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:abdea36c207bf5aaae19687d2c48a9839207b553d899f5a60e5e7b15b9072d5b
-size 519
+import * as S from './NotFoundPage.style';
+import video from '../../assets/videos/404.mp4';
+
+function NotFoundPage() {
+    return (
+        <S.Container>
+            <S.StyledVideo autoPlay loop muted>
+                <source src={video} />
+            </S.StyledVideo>
+            <S.Description>
+                ⚠️
+            </S.Description>
+            <S.Description>
+                잘못된 접근 경로입니다.
+            </S.Description>
+        </S.Container>
+    );
+}
+
+export default NotFoundPage;

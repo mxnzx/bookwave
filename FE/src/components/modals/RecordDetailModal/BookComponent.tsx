@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dfc625a018a313a17ee7b9328e53995a2c771ae87828d71fd45a29b43ae03c70
-size 786
+import { useNavigate } from "react-router-dom";
+import * as S from "./BookComponent.styles";
+
+interface Props {
+    bookId: number;
+    bookTitle: string; 
+    bookAuthor: string;
+    recordImageUrl: string;
+}
+
+function BookComponent({ bookId, bookTitle, bookAuthor, recordImageUrl }: Props) {
+    const navigate = useNavigate();
+
+    const BookDetail = () => {
+        navigate(`/bookdetail/${bookId}`);
+    };
+
+    return (
+        <S.Container>
+            <S.BookImage onClick={BookDetail}>
+                <img src={recordImageUrl} />
+            </S.BookImage>
+            <S.BookInfo>
+                <S.BookTitle>{bookTitle}</S.BookTitle>
+                <S.Author>{bookAuthor}</S.Author>
+            </S.BookInfo>
+        </S.Container>
+    );
+}
+
+export default BookComponent;

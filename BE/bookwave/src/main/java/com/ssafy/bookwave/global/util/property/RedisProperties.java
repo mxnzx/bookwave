@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c92b9e246aa638d2005b009e1acc963760b0698313b17d2111b79f3dabacb503
-size 649
+package com.ssafy.bookwave.global.util.property;
+
+import lombok.Getter;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component
+@Getter
+public class RedisProperties {
+    public String REDIS_HOST;
+    public int REDIS_PORT;
+    public String REDIS_PASSWORD;
+
+    public RedisProperties(@Value("${redis.host}") String redisHost,
+                           @Value("${redis.port}") int redisPort,
+                           @Value("${redis.password}") String redisPassword) {
+        REDIS_HOST = redisHost;
+        REDIS_PORT = redisPort;
+        REDIS_PASSWORD = redisPassword;
+    }
+}

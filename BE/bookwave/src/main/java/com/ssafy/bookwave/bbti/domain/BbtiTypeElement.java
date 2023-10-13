@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cea34637c016a1f1908c9c8d668ac63e830728f796c2f43eafff99bd02c0dfc4
-size 659
+package com.ssafy.bookwave.bbti.domain;
+
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.ssafy.bookwave.bbti.enums.Code;
+
+import javax.persistence.*;
+
+import lombok.*;
+
+@Entity
+@Getter
+@Builder
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
+@AllArgsConstructor
+//@ToString
+public class BbtiTypeElement {
+
+    @Id @GeneratedValue
+    private Integer id;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "bbti_question_id")
+//    @JsonIgnore
+    private BbtiQuestion bbtiQuestion;
+
+    private String content;
+    @Enumerated(EnumType.STRING)
+    private Code code;
+
+}

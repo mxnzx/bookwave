@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:926732505fcb3b4312a2917cea3165f17c0a63ff2bef5972397a8c20f9892312
-size 691
+import React, { ReactNode } from "react";
+import { useMediaQuery } from "react-responsive";
+
+interface ChildrenProps {
+  children: ReactNode;
+}
+
+// const Mobile: React.FC<ChildrenProps> = ({ children }) => {
+//   const isPc = useMediaQuery({
+//     query: "(max-width:500px)"
+//   });
+//   return <>{isPc && children}</>;
+// };
+
+const Tablet: React.FC<ChildrenProps> = ({ children }) => {
+  const isMobile = useMediaQuery({
+    query: "(max-width: 1080px)"
+  });
+  return <>{isMobile && children}</>;
+};
+
+const PC: React.FC<ChildrenProps> = ({ children }) => {
+  const isPc = useMediaQuery({
+    query: "(min-width:1081px)"
+  });
+  return <>{isPc && children}</>;
+};
+
+
+export { PC, Tablet };
