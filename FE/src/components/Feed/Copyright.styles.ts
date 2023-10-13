@@ -6,14 +6,10 @@ export const Footer = styled.div`
   padding: 20px;
   text-align: center;
 `;
-
 export const CopyRightText = styled.div`
- font-family: 'Pretendard-Regular';
   font-size: 1vw;
 `;
-
 export const CopyrightNotice = styled.div`
- font-family: 'Pretendard-Regular';
   font-size: 1vw;
   margin-top: 10px;
 `;
