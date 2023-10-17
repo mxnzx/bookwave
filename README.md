@@ -25,11 +25,11 @@
 
 - [개발환경](https://educated-horn-9ae.notion.site/3ac2b33df4894c13b24cf91008340c02?pvs=4)
 
-# 📝 프로젝트 산출물
+### 📝 프로젝트 산출물
 
 - [요구사항 명세서](https://educated-horn-9ae.notion.site/2cec3b46bba041ebabdec4cba631ca0b?pvs=4)
 - [erd](./etc/Readme_images/erd.png)
 - [api 연동 규격서](https://educated-horn-9ae.notion.site/API-469f0df988754d3ea1766d74fd5bc0a4?pvs=4)
 - [목업](./etc/Readme_images/목업.png)
-- [포팅메뉴얼](./exec/포팅 메뉴얼 bookwave.pdf)
+- [포팅메뉴얼](./exec/포팅%20메뉴얼%20bookwave.pdf)
 - [발표 자료](./etc/Docs/발표자료.pdf)
