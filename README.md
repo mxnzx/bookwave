@@ -26,6 +26,12 @@
 
 <br />
 
+## 📆 프로젝트 기간
+
+### 23.08.21. ~ 23.10.06
+
+<br />
+
 ## 🗂️ 프로젝트 구성
 
 <details>
@@ -720,12 +726,35 @@
   <br />
 </div>
 
-- [개발환경](https://educated-horn-9ae.notion.site/3ac2b33df4894c13b24cf91008340c02?pvs=4)
+<br/>
+
+# 📚 프로젝트 기능
+
+### 1. 메인화면
+
+<div align="center">
+  <br />
+  <img src="https://github.com/choijehyuk/bookwave/assets/90392777/56c48e36-9065-40bc-9afe-147306db8085" width="70%"/>
+  <br />
+</div>
+
+### 2. 회원가입 / 로그인
+
+* 카카오 소셜 로그인으로 회원가입을 진행합니다.
+* 최초 로그인 시 기본정보를 입력받습니다.
+
+<div align="center">
+  <br />
+  <img src="https://github.com/choijehyuk/bookwave/assets/90392777/ce279757-8afc-4df0-a340-3ac4382f5da7" width="70%"/>
+  <br />
+</div>
+
+
 
 <br />
 
 ## 📝 프로젝트 산출물
-
+- [개발환경](https://educated-horn-9ae.notion.site/3ac2b33df4894c13b24cf91008340c02?pvs=4)
 - [요구사항 명세서](https://educated-horn-9ae.notion.site/2cec3b46bba041ebabdec4cba631ca0b?pvs=4)
 - [erd](./etc/Readme_images/erd.png)
 - [api 연동 규격서](https://educated-horn-9ae.notion.site/API-469f0df988754d3ea1766d74fd5bc0a4?pvs=4)
