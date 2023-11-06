@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://github.com/choijehyuk/bookwave/assets/90392777/37caffd7-a3c7-4a48-a168-eb781605532a" width="40%"/>
+  <img src="https://github.com/choijehyuk/bookwave/assets/90392777/37caffd7-a3c7-4a48-a168-eb781605532a" width="60%"/>
 </div>
 
 <br/>
