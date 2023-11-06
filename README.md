@@ -750,6 +750,18 @@
 </div>
 
 
+### 3. 회원정보 수정
+
+* 프로필 이미지와 닉네임을 변경할 수 있습니다.
+
+<div align="center">
+  <br />
+  <img src="https://github.com/choijehyuk/bookwave/assets/90392777/5e86fe3a-96d3-444a-bb76-782c932ab1c1" width="70%"/>
+  <br />
+</div>
+
+
+
 
 <br />
 
