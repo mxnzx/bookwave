@@ -1,4 +1,23 @@
-# bookwave
+<div align="center">
+  <img src="https://github.com/choijehyuk/bookwave/assets/90392777/37caffd7-a3c7-4a48-a168-eb781605532a" width="40%"/>
+</div>
+
+<br/>
+
+<div align="center">
+  <h1>BookWave</h1> 
+  
+수많은 책들 사이에서 어떤 책을 읽어야할 지 감이 잡히지 않을 때,
+
+베스트 셀러 추천이 아닌 색다른 기준으로 추천 받고 싶을 때,
+
+다양하게 느끼는 감정들을 기록하고 공유하고 싶을 때, 
+
+저희는 이와 같은 상황을 위해 “북웨이브” 서비스를 고안했습니다.
+</div>
+
+<br>
+
 
 ## 👪 개발 멤버 소개
 
