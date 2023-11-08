@@ -776,6 +776,26 @@
 </div>
 
 
+### 5. 독서기록 작성
+* 자신이 읽는중이거나 읽은 도서를 선택해 독서기록을 작성할 수 있습니다.
+
+<div align="center">
+  <br />
+  <img src="https://github.com/choijehyuk/bookwave/assets/90392777/1670a38c-40fa-4b05-9792-593d93e204f5" width="70%"/>
+  <br />
+</div>
+
+### 5. 피드
+* 자신이 팔로우하거나 자신과 BBTI가 같은 회원이 남긴 독서기록을 볼 수 있습니다.
+
+<div align="center">
+  <br />
+  <img src="https://github.com/choijehyuk/bookwave/assets/90392777/f1609732-3392-4eea-a229-b34acd4a3583" width="70%"/>
+  <br />
+</div>
+
+
+
 <br />
 
 ## 📝 프로젝트 산출물
