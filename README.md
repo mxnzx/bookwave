@@ -794,7 +794,15 @@
   <br />
 </div>
 
+### 5. 피드 상세보기
+* 피드 클릭 시 피드 상세보기를 할 수 있습니다.
+* 좋아요 및 댓글작성을 할 수 있습니다.
 
+<div align="center">
+  <br />
+  <img src="https://github.com/choijehyuk/bookwave/assets/90392777/c494a843-477c-46ed-972a-2107cf013d87" width="70%"/>
+  <br />
+</div>
 
 <br />
 
