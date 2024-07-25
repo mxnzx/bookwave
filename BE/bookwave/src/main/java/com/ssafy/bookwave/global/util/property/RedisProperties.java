@@ -11,9 +11,9 @@ public class RedisProperties {
     public int REDIS_PORT;
     public String REDIS_PASSWORD;
 
-    public RedisProperties(@Value("${redis.host}") String redisHost,
-                           @Value("${redis.port}") int redisPort,
-                           @Value("${redis.password}") String redisPassword) {
+    public RedisProperties(@Value("${PUBLIC_IP}") String redisHost,
+                           @Value("${REDIS_PORT}") int redisPort,
+                           @Value("${REDIS_PASSWORD}") String redisPassword) {
         REDIS_HOST = redisHost;
         REDIS_PORT = redisPort;
         REDIS_PASSWORD = redisPassword;
