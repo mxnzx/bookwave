@@ -1,0 +1,48 @@
+#server:
+#  port: 9090
+
+
+spring:
+  # MySQL
+  datasource:
+    url: jdbc:mysql://${PUBLIC_IP}:${MYSQL_PORT}/${MYSQL_NAME}?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    username: ${MYSQL_USER_NAME}
+    password: ${MYSQL_USER_PASSWORD}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  #Redis
+  redis:
+    host: ${PUBLIC_IP}
+    port: ${REDIS_PORT}
+    password: ${REDIS_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        default_batch_fetch_size: 1000 # 최적화 옵션
+
+logging.level:
+  org.hibernate.SQL: debug
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui
+
+
+
+## S3
+#
+#cloud:
+#  aws:
+#    s3:
+#      url: ${S3_URL}
+#      bucket: ${S3_BUCKET}
+#    credentials:
+#      access-key: ${CREDENTIALS_ACCESS_KEY}
+#      secret-key: ${CREDENTIALS_SECRET_KEY}
+#    region:
+#      static: ${REGION_STATIC}
+#      auto: false
+#    stack:
+#      auto: false
